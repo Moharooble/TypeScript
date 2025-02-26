@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: #f5f7fa;
+}
+
+.header {
+  display: flex;
+  background: white;
+  margin-top: 40px;
+  padding: 20px;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5px;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+button {
+  padding: 6px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.todo-list {
+  margin-top: 20px;
+  width: 400px;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  transition: 0.3s;
+}
+
+.task:hover {
+  transform: translateY(-3px);
+  /* box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); */
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.task-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  width: 57%;
+  margin-right: 20px;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left; 
+}
+
+.task-deadline {
+  font-size: 14px;
+  color: #777;
+  width: 30%;
+  text-align: center;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.remove {
+  position: absolute;
+  right: 15px;
+  font-size: 18px;
+  width: 10%;
+  text-align: right;
+  color: #ff4d4d;
+  cursor: pointer;
+  transition: 0.3s;
+  flex-shrink: 0; /* Keep it fixed, doesn't move */
+}
+
+.remove:hover {
+  color: #d60000;
+  transform: scale(1.1);
+}
